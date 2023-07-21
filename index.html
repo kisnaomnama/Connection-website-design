@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Profile Page</title>
+</head>
+
+<body>
+    <!-- <div class="container"> -->
+    <!-- NavBar start-->
+    <div class="nav">
+        <ul class="nav-links">
+            <li>
+                <h1>Profile</h1>
+            </li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">My Profile</a></li>
+            <li><a href="#">Find Connections</a></li>
+        </ul>
+        <button class="btn">Sign Out</button>
+    </div>
+    <div class="all-body">
+        <div class="left-part">
+            <div class="user-card">
+                <div class="card-header">
+                    <img src="user-circle.png" alt="user-circle" class="avatar-m">
+                </div>
+                <div class="card-body">
+                    <h1 id="idName">Krishna Surkheti</h1>
+                    <h3>
+                        <img src="map-marker.png" alt="pin" class="icon-s">
+                        San Francisco
+                    </h3>
+                    <p>Developer | Engineer | Problem Solver<br>
+                        Master of shadows and the Internet!</p>
+                    <p>
+                    <p onclick="edit()"><a href="#">
+                            <img src="gear.png" alt="gear" class="icon-s">
+                            edit profile
+                        </a></p>
+                    </p>
+                </div>
+            </div>
+            <div class="education">
+                <div class="header">Education</div>
+                <div class="education-body">
+                    <h2>Intermediate Level Electrical Engineering</h2>
+                    <p id="line2"> Dec 2006 - Mar 2009</p>
+                    <h3>App Academy</h3>
+                    <p>Triple black belt in Python, Mern, and C#...</p>
+
+                </div>
+            </div>
+        </div>
+        <div class="right-part">
+            <!-- connection requests card -->
+            <div class="connection-request">
+                <div class="header">
+                    <span class="head-numbers" id="count">2</span>
+                    Connection Requests
+                </div>
+
+
+                <ul class="friend-request">
+                    <li class="left" id="count1">
+                        <span>
+                            <img src="todd-s.jpg" alt="todd">
+                            Todd E.
+                        </span>
+
+                        <span class="right">
+                            <img src="accept-circle.png" alt="accept" onclick='accept("#count1")'>
+                            <img src="close-circle.png" alt="decline" onclick='ignore("#count1")'>
+                        </span>
+                    </li>
+
+                    <li class="left" id="count2">
+                        <span>
+                            <img src="phil-s.jpg" alt="phil">
+                            Phil K.
+                        </span>
+                        <span class="right">
+                            <img src="accept-circle.png" alt="accept" onclick='accept("#count2")'>
+                            <img src="close-circle.png" alt="decline" onclick='ignore("#count2")'>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class="your-connection">
+                <div class="header">
+                    <span class="head-numbers" id="connectionsCount">500</span>
+                    Your Connections
+                </div>
+                <div class="friends">
+                    <ul>
+                        <li><img src="adrien-s.jpg" alt="Adrienpic">Adrien D</li>
+                        <li><img src="anne-s.jpg" alt="Annepic">Anne J</li>
+                        <li><img src="alayne-s.jpg" alt="Alaynepic">Alayne T</li>
+                        <li><img src="arry-s.jpg" alt="Arrypic">Arry Y</li>
+                    </ul>
+                </div>
+                <div class="view-more">
+                    <a href="#">View more</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
